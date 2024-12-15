@@ -11,6 +11,9 @@
     "test": "vitest --run"
   },
   "dependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
     "luxon": "^2.5.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
