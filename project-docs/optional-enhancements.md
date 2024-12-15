@@ -12,7 +12,7 @@ In order to do this you will need to figure out a way, without modifying the JSO
 Once you can designate each message as either local or remote, you should modify your `ChatEntry` component(s) to include the CSS class "local" or "remote" as appropriate. This class should be added to whatever HTML element has the "chat-entry" class.
 
 ## Color Choice
-Now that we have designated `ChatEntry`s as `"local"` or `"remote"`, let's add a feature to style the entries from different senders with different colors. Take a look at the image our solution for one suggestion on how to implement a color picking feature. 
+Now that we have designated `ChatEntry`s as `"local"` or `"remote"`, let's add a feature to style the entries from different senders with different colors. Take a look at the image our solution for one suggestion on how to implement a color picking feature.
 
 ![React Chat Log demo](../images/react-chatlog-demo-extras.png)
 

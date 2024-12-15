@@ -14,7 +14,7 @@ const ChatEntry = ({ id, body, sender, timeStamp, liked, onclickChat }) => {
     onclickChat(id);
     //we are passing these states to ChatLog ->App.jsx
   };
-  return id % 2 ? (
+  return sender === 'Vladimir'? (
     <div className='chat-entry local'>
       <h2 className='entry-name'>{sender}</h2>
       <section className='entry-bubble'>
@@ -40,6 +40,7 @@ const ChatEntry = ({ id, body, sender, timeStamp, liked, onclickChat }) => {
         </button>
       </section>
     </div>
+    //
   );
 };
 ChatEntry.propTypes = {

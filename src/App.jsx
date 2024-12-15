@@ -200,7 +200,6 @@ const App = () => {
     setChatData((prevChatData) => {
       const updatedChat = prevChatData.map((chat) => {
         if (chat.id === id) {
-          console.log('fff', chat.liked);
           const isNowLiked = !chat.liked; // Toggle the like status
           return { ...chat, liked: isNowLiked };
         }
@@ -210,7 +209,6 @@ const App = () => {
     });
   };
   const likedCount = chatData.filter((chat) => chat.liked).length;
-  console.log('lc', likedCount);
 
   return (
     <div id='App'>
