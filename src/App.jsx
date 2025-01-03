@@ -18,6 +18,7 @@ const App = () => {
       })
     });
   };
+  
   const likedCount = chatData.filter((chat) => chat.liked).length;
 
   return (
