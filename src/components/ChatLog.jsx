@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import ChatEntry from './ChatEntry';
 
 const ChatLog = ( props) => {
-  const {entries, onclickChat} = props
+  const {entries, onclickChat} = props;
   const chatComponents = props.entries.map((chat, i) => {
     return (
       <ChatEntry
