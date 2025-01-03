@@ -8,15 +8,14 @@ const App = () => {
   const [chatData, setChatData] = useState(DATA);
 
   const handleLikeClick = (id) => {
-    setChatData((prevChatData) => {
-      const updatedChat = prevChatData.map((chat) => {
+    setChatData((chatData) => 
+      chatData.map((chat) => {
         if (chat.id === id) {
           const isNowLiked = !chat.liked; // Toggle the like status
           return { ...chat, liked: isNowLiked };
         }
         return chat;
-      });
-      return updatedChat;
+      })
     });
   };
   const likedCount = chatData.filter((chat) => chat.liked).length;
