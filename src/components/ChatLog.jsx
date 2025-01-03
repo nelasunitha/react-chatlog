@@ -6,13 +6,13 @@ const ChatLog = ( props) => {
   const chatComponents = props.entries.map((chat, i) => {
     return (
       <ChatEntry
-        id ={chat.id}
+        id={chat.id}
         sender={chat.sender}
         body={chat.body}
         timeStamp={chat.timeStamp}
         liked={chat.liked}
         onclickChat={onclickChat}
-        key ={i}
+        key={i}
       />
     );
   });
